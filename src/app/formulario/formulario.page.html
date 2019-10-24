@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Crear</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>Concepto:</p>
+  <ion-input type="text" [(ngModel)]="concepto"></ion-input>
+  <p>Cantidad:</p>
+  <ion-input type="text" [(ngModel)]="cantidad"></ion-input>
+  <p>Descripcion:</p>
+  <ion-input type="text" [(ngModel)]="descripcion"></ion-input>
+  <p>Id Saldo:</p>
+  <ion-input type="text" [(ngModel)]="idSaldo"></ion-input>
+  <ion-button (click)="addEntrada()">Enviar</ion-button>
+</ion-content>

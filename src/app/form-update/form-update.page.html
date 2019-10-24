@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Actualizar</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="menu"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>Id Movimiento:</p>
+  <ion-input type="text" [(ngModel)]="idmovimiento"></ion-input>
+  <p>Concepto:</p>
+  <ion-input type="text" [(ngModel)]="concepto"></ion-input>
+  <p>Cantidad:</p>
+  <ion-input type="number" [(ngModel)]="cantidad"></ion-input>
+  <p>Descripcion:</p>
+  <ion-input type="text" [(ngModel)]="descripcion"></ion-input>
+  <p>Id Saldo:</p>
+  <ion-input type="number" [(ngModel)]="idSaldo"></ion-input>
+
+  <ion-button (click)="updateEntrada()">Enviar</ion-button>
+</ion-content>

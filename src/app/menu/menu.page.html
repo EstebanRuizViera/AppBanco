@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Menu</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <h2>Saldo:{{saldo}}</h2>
+  </div>
+
+  <ion-list  id="lista">
+  </ion-list>
+
+  <ion-button (click)="goToFormulario()">Crear</ion-button>
+  <ion-button (click)="goToFormUpdate()">Actualizar</ion-button>
+
+</ion-content>
